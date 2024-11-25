@@ -37,11 +37,11 @@ wss.on('connection', (ws, req) => {
         }
     });
 
-    // Evento de fechamento da conexão
-    ws.on('close', () => {
-        console.log(`Cliente desconectado: ${clientAddress}`);
-        console.log(`Clientes conectados: ${wss.clients.size}`);
-    });
+    // // Evento de fechamento da conexão
+    // ws.on('close', () => {
+    //     console.log(`Cliente desconectado: ${clientAddress}`);
+    //     console.log(`Clientes conectados: ${wss.clients.size}`);
+    // });
 
     // Tratamento de erros na conexão
     ws.on('error', (error) => {
